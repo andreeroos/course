@@ -1,5 +1,11 @@
+
+{{
+  config (
+    materialized = 'view'
+  )
+}}
 with src_listings as(
-select * from AIRBNB.DEV.src_listings
+select * from {{ref('src_listings')}}
 
 )
 SELECT
