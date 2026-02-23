@@ -4,6 +4,13 @@ sources:
     tables:
       - name: listings
         identifier: raw_listings
+        columns:
+          - name: price
+            tests:
+              - dbt_expectations.expect_column_values_to_match_regex:
+                  arguments:
+                    regex: '^.*'
+              - not_null
 
       - name: hosts
         identifier: raw_hosts
