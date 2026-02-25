@@ -9,7 +9,7 @@ sources:
             tests:
               - dbt_expectations.expect_column_values_to_match_regex:
                   arguments:
-                    regex: '^.*'
+                    regex: '^\\$[0-9]+[0-9.]+.*'
               - not_null
 
       - name: hosts
