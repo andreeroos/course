@@ -1,0 +1,54 @@
+2026-03-09 17:18:20 — INFO — Running with edr=0.22.0
+2026-03-09 17:18:21 — INFO — Installing packages for edr internal dbt package...
+2026-03-09 17:18:21 — INFO — Running dbt command --log-format json deps --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+2026-03-09 17:18:29 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_latest_invocation", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:18:30 — ERROR — Unable to get the latest invocation: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'[0m
+2026-03-09 17:18:30 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_adapter_type_and_unique_id", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+2026-03-09 17:18:31 — DEBUG — Could not get warehouse info.
+Traceback (most recent call last):
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\data_monitoring\data_monitoring.py", line 142, in _get_warehouse_info
+    self.internal_dbt_runner.run_operation(
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 178, in run_operation
+    result = self._run_command(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 115, in _run_command
+    result = self._inner_run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\api_dbt_runner.py", line 54, in _inner_run_command
+    raise DbtCommandError(
+elementary.exceptions.exceptions.DbtCommandError: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+2026-03-09 17:18:31 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_elementary_database_and_schema", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:18:32 — ERROR — Failed to parse Elementary's database and schema.[0m
+2026-03-09 17:18:32 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_test_results", "macro_args": {"days_back": 7, "invocations_per_test": 720, "disable_passed_test_metrics": false}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:18:32 — ERROR — Could not generate the report - Error: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+Please reach out to our community for help with this issue.[0m
+Traceback (most recent call last):
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\report\report.py", line 84, in get_report_data
+    tests_api = TestsAPI(
+                ^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\tests\tests.py", line 52, in __init__
+    self.test_results_db_rows = self._get_test_results_db_rows(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\tests\tests.py", line 64, in _get_test_results_db_rows
+    return self.tests_fetcher.get_all_test_results_db_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\fetchers\tests\tests.py", line 26, in get_all_test_results_db_rows
+    run_operation_response = self.dbt_runner.run_operation(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 178, in run_operation
+    result = self._run_command(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 115, in _run_command
+    result = self._inner_run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\api_dbt_runner.py", line 54, in _inner_run_command
+    raise DbtCommandError(
+elementary.exceptions.exceptions.DbtCommandError: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'

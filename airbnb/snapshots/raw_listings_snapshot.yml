@@ -6,10 +6,12 @@ snapshots:
       strategy: timestamp
       updated_at: updated_at
       hard_deletes: invalidate
+
   - name: scd_raw_hosts
     relation: source('airbnb', 'hosts')
     config:
       unique_key: id
-      strategy: timestamp
+      strategy: check
+      check_cols: [host_name, IS_SUPERHOST]
       updated_at: updated_at
       hard_deletes: invalidate

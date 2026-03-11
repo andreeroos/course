@@ -14,6 +14,11 @@ sources:
 
       - name: hosts
         identifier: raw_hosts
+        columns:
+          - name: host_name
+            meta:
+              datahub_tags:
+                - "pii"
 
       - name: reviews
         identifier: raw_reviews
@@ -21,4 +26,3 @@ sources:
           loaded_at_field: date
           freshness:
             warn_after: {count: 1, period: hour}
-            # error_after: {count: 24, period: hour}

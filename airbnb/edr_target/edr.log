@@ -1,0 +1,141 @@
+2026-03-09 17:19:51 — INFO — Running with edr=0.22.0
+2026-03-09 17:19:52 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_latest_invocation", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:19:54 — ERROR — Unable to get the latest invocation: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'[0m
+2026-03-09 17:19:54 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_adapter_type_and_unique_id", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+2026-03-09 17:19:55 — DEBUG — Could not get warehouse info.
+Traceback (most recent call last):
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\data_monitoring\data_monitoring.py", line 142, in _get_warehouse_info
+    self.internal_dbt_runner.run_operation(
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 178, in run_operation
+    result = self._run_command(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 115, in _run_command
+    result = self._inner_run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\api_dbt_runner.py", line 54, in _inner_run_command
+    raise DbtCommandError(
+elementary.exceptions.exceptions.DbtCommandError: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+2026-03-09 17:19:55 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_elementary_database_and_schema", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:19:56 — ERROR — Failed to parse Elementary's database and schema.[0m
+2026-03-09 17:19:56 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_test_results", "macro_args": {"days_back": 7, "invocations_per_test": 720, "disable_passed_test_metrics": false}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:19:57 — ERROR — Could not generate the report - Error: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+Please reach out to our community for help with this issue.[0m
+Traceback (most recent call last):
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\report\report.py", line 84, in get_report_data
+    tests_api = TestsAPI(
+                ^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\tests\tests.py", line 52, in __init__
+    self.test_results_db_rows = self._get_test_results_db_rows(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\tests\tests.py", line 64, in _get_test_results_db_rows
+    return self.tests_fetcher.get_all_test_results_db_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\fetchers\tests\tests.py", line 26, in get_all_test_results_db_rows
+    run_operation_response = self.dbt_runner.run_operation(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 178, in run_operation
+    result = self._run_command(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 115, in _run_command
+    result = self._inner_run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\api_dbt_runner.py", line 54, in _inner_run_command
+    raise DbtCommandError(
+elementary.exceptions.exceptions.DbtCommandError: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+2026-03-09 17:22:39 — INFO — Running with edr=0.22.0
+2026-03-09 17:22:40 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_latest_invocation", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:22:41 — ERROR — Unable to get the latest invocation: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'[0m
+2026-03-09 17:22:41 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_adapter_type_and_unique_id", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+2026-03-09 17:22:42 — DEBUG — Could not get warehouse info.
+Traceback (most recent call last):
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\data_monitoring\data_monitoring.py", line 142, in _get_warehouse_info
+    self.internal_dbt_runner.run_operation(
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 178, in run_operation
+    result = self._run_command(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 115, in _run_command
+    result = self._inner_run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\api_dbt_runner.py", line 54, in _inner_run_command
+    raise DbtCommandError(
+elementary.exceptions.exceptions.DbtCommandError: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+2026-03-09 17:22:42 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_elementary_database_and_schema", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:22:43 — ERROR — Failed to parse Elementary's database and schema.[0m
+2026-03-09 17:22:43 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_test_results", "macro_args": {"days_back": 7, "invocations_per_test": 720, "disable_passed_test_metrics": false}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project
+[31;20m2026-03-09 17:22:44 — ERROR — Could not generate the report - Error: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+Please reach out to our community for help with this issue.[0m
+Traceback (most recent call last):
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\report\report.py", line 84, in get_report_data
+    tests_api = TestsAPI(
+                ^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\tests\tests.py", line 52, in __init__
+    self.test_results_db_rows = self._get_test_results_db_rows(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\api\tests\tests.py", line 64, in _get_test_results_db_rows
+    return self.tests_fetcher.get_all_test_results_db_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\fetchers\tests\tests.py", line 26, in get_all_test_results_db_rows
+    run_operation_response = self.dbt_runner.run_operation(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 178, in run_operation
+    result = self._run_command(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\command_line_dbt_runner.py", line 115, in _run_command
+    result = self._inner_run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\clients\dbt\api_dbt_runner.py", line 54, in _inner_run_command
+    raise DbtCommandError(
+elementary.exceptions.exceptions.DbtCommandError: Failed to run dbt command.
+Runtime Error
+  Could not find profile named 'elementary'
+2026-03-09 17:25:59 — INFO — Running with edr=0.22.0
+2026-03-09 17:26:00 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_latest_invocation", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:09 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_latest_invocation", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 2652
+2026-03-09 17:26:09 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_adapter_type_and_unique_id", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:11 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_adapter_type_and_unique_id", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 470
+2026-03-09 17:26:11 — INFO — edr (0.22.0) and Elementary's dbt package (0.22.1) are compatible.
+2026-03-09 17:26:11 — DEBUG — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_elementary_database_and_schema", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:14 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_elementary_database_and_schema", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 426
+2026-03-09 17:26:14 — INFO — Elementary's database and schema: 'AIRBNB.DEV'
+2026-03-09 17:26:14 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_test_results", "macro_args": {"days_back": 7, "invocations_per_test": 720, "disable_passed_test_metrics": false}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:19 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_test_results", "macro_args": {"days_back": 7, "invocations_per_test": 720, "disable_passed_test_metrics": false}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 93176
+2026-03-09 17:26:19 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_source_freshness_results", "macro_args": {"days_back": 7, "invocations_per_test": 720}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:22 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_source_freshness_results", "macro_args": {"days_back": 7, "invocations_per_test": 720}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 402
+2026-03-09 17:26:22 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_seeds", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:25 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_seeds", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 1068
+2026-03-09 17:26:25 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_snapshots", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:28 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_snapshots", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 3232
+2026-03-09 17:26:28 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models", "macro_args": {"exclude_elementary": true}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:31 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_models", "macro_args": {"exclude_elementary": true}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 7686
+2026-03-09 17:26:31 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_sources", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:35 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_sources", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 2456
+2026-03-09 17:26:35 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_exposures", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:38 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_exposures", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 402
+2026-03-09 17:26:38 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_singular_tests", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:41 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_singular_tests", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 402
+2026-03-09 17:26:41 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models_runs", "macro_args": {"days_back": 7, "exclude_elementary": true}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:44 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_models_runs", "macro_args": {"days_back": 7, "exclude_elementary": true}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 7926
+2026-03-09 17:26:44 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_dbt_models_test_coverage", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:47 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_dbt_models_test_coverage", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 1146
+2026-03-09 17:26:47 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_tests", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:49 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_tests", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 27194
+2026-03-09 17:26:49 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_nodes_depends_on_nodes", "macro_args": {"exclude_elementary": true}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:52 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_nodes_depends_on_nodes", "macro_args": {"exclude_elementary": true}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 5032
+2026-03-09 17:26:52 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models_latest_invocation", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:26:56 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_models_latest_invocation", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 8614
+2026-03-09 17:26:56 — INFO — Running dbt command --log-format json run-operation elementary.log_macro_results --args {"macro_name": "elementary_cli.get_models_latest_invocations_data", "macro_args": {}} --project-dir C:\Project\DBT\dbt-bootcamp\.venv\Lib\site-packages\elementary\monitor\dbt_project --profiles-dir C:\Project\DBT\dbt-bootcamp\airbnb --target dev
+2026-03-09 17:27:01 — DEBUG — Result bytes size for command '['--log-format', 'json', 'run-operation', 'elementary.log_macro_results', '--args', '{"macro_name": "elementary_cli.get_models_latest_invocations_data", "macro_args": {}}', '--project-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\.venv\\Lib\\site-packages\\elementary\\monitor\\dbt_project', '--profiles-dir', 'C:\\Project\\DBT\\dbt-bootcamp\\airbnb', '--target', 'dev']' is 824
