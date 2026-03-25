@@ -1,13 +1,14 @@
 models:
   - name: dim_listings_cleansed
-    tags: ["listings"]
     description: >
       This table has been cleaned and contains information about listings for Airbnb
-    meta:
-      data_steward: andree.roos@beeai.se
-      business_owner: evamaria.olsson@mcf.se
-      technical_owner: christian.goransson@mcf.se
-      terms_list: airbnb,listings
+    config:
+      tags: ["listings"]
+      meta:
+        data_steward: andree.roos@beeai.se
+        business_owner: evamaria.olsson@mcf.se
+        technical_owner: christian.goransson@mcf.se
+        terms_list: airbnb,listings
     data_tests:
       - minimum_row_count:
           arguments:

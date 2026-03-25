@@ -16,9 +16,10 @@ sources:
         identifier: raw_hosts
         columns:
           - name: host_name
-            meta:
-              datahub_tags:
-                - "pii"
+            config:
+              meta:
+                datahub_tags:
+                  - "pii"
 
       - name: reviews
         identifier: raw_reviews
